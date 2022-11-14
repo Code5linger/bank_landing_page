@@ -77,12 +77,33 @@ body {
 }
 
 .menu-item:last-of-type {
-  color: #ff7676;
-  border-bottom: 4px solid #f8d1be;
+  color: #f00000;
+  width: 148px;
+  height: 45px;
+  position: relative;
+  bottom: 0px;
+  cursor: pointer;
+  background: #3c4ef3;
+  box-shadow: rgba(255, 163, 148, 0.1) 0px 5px 10px;
+  border: none;
+  border-radius: 37px;
+  font-family: Alegreya;
+  font-weight: bold;
+  font-size: 19px;
+  text-align: center;
+  color: #ffffff;
+}
+.menu-item:last-of-type:hover {
+  transform: translateY(-3px);
+  opacity: 0.7;
+}
+
+.menu-cta {
+  top: 10px;
 }
 
 .container {
-  background: linear-gradient(to left, #ffe1d1, #ffdbca);
+  background: linear-gradient(to left, #ffffff, #ffffff);
   max-width: 1500px;
   margin: 0 auto;
 }
@@ -94,7 +115,7 @@ body {
   grid-template-areas: "lamp title sun sun" "lamp title sun sun";
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, minmax(0px, auto));
-  border-bottom: 1px solid #ff8989;
+  border-bottom: 1px solid #ffffff;
 }
 @media (max-width: 768px) {
   .hero_container {
@@ -198,17 +219,17 @@ body {
 
 .container_sun {
   grid-area: sun;
-  align-self: end;
+  align-self: start;
   justify-self: start;
 }
-@media (max-width: 768px) {
+@media (max-width: 1920px) {
   .container_sun {
     justify-self: center;
   }
 }
 .container_sun img {
-  max-width: 400px;
-  min-width: 200px;
+  max-width: 800px;
+  min-width: 400px;
   width: 100%;
 }
 @media (max-width: 768px) {
