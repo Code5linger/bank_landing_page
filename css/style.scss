@@ -12,7 +12,7 @@ body {
   font-size: 20px;
   //setting up first grid.
   display: grid;
-  grid-template-columns: 20% 1fr;
+  grid-template-columns: 20% 2fr;
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     padding: 0px;
@@ -47,11 +47,13 @@ body {
   list-style: none;
   // setting up flexbox for menu
   display: flex;
-  justify-content: left;
+  justify-content: center;
+  left: 60px;
 
   &-item {
-    margin: 48px 45px;
+    margin: 49px 15.6px;
     position: relative;
+    left: 60px;
   }
   @media (max-width: 768px) {
     display: none;

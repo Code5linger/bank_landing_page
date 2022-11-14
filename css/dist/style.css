@@ -8,7 +8,7 @@ body {
   font-weight: bold;
   font-size: 20px;
   display: grid;
-  grid-template-columns: 20% 1fr;
+  grid-template-columns: 20% 2fr;
 }
 @media (max-width: 768px) {
   .header {
@@ -44,11 +44,13 @@ body {
   opacity: 0.7;
   list-style: none;
   display: flex;
-  justify-content: left;
+  justify-content: center;
+  left: 60px;
 }
 .menu-item {
-  margin: 48px 45px;
+  margin: 49px 15.6px;
   position: relative;
+  left: 60px;
 }
 @media (max-width: 768px) {
   .menu {
